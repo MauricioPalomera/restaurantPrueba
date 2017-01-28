@@ -1,0 +1,36 @@
+<div class="container">
+<h2>comentarios del platillo {{saucer.name}} de {{restaurants.name}} </h2> 
+<p> </p>
+  <a routerLink="/restaurants/{{ restaurantId }}/saucers"> back to saucers</a>
+
+
+<ul>
+  
+  <li class="card" *ngFor="let comment of comments">
+      <h4>{{comment.createdBy}}</h4>
+      <p>{{comment.comment}}</p>
+      <span>{{comment.date}}</span>
+    </li>
+  </ul>
+  
+
+<div>
+	<h3>New Comment</h3>
+  <div class="alert alert-success" role="alert" *ngIf="commentSuccess">
+    Tu comentario se agregó correctamente
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="commentError">
+    Tu comentario se agregó correctamente
+  </div>
+  
+	<form action="" (ngSubmit)="sendComment()">
+    <div class="row form-group">
+      <input type="text" class="form-control" name="author" [(ngModel)]="data.createdBy">
+    </div>
+		<div class="row form-group">
+		<textarea class="form-control" name="comment" [(ngModel)]="data.comment"></textarea>
+    </div>
+		<button class="btn btn-success">Send commnet</button>
+	</form>
+
+</div> </div>
