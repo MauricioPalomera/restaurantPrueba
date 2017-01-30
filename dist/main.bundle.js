@@ -663,7 +663,7 @@ module.exports = "<div class=\"container\">\n<h2>comentarios del platillo {{sauc
 /***/ 716:
 /***/ (function(module, exports) {
 
-module.exports = "<h2></h2>\n\n<ul>\n  <li class=\"card\" *ngFor=\"let restaurant of restaurants\">\n  <h3>{{ restaurant.name }} </h3>\n  <p>{{ restaurant.description }}</p>\n  <a routerLink=\"restaurants/{{ restaurant.id }}/saucers\"> view more</a>\n  \n  </li>\n</ul>"
+module.exports = "<h2>Mauricio</h2>\n\n<ul>\n  <li class=\"card\" *ngFor=\"let restaurant of restaurants\">\n  <h3>{{ restaurant.name }} </h3>\n  <p>{{ restaurant.description }}</p>\n  <a routerLink=\"restaurants/{{ restaurant.id }}/saucers\"> view more</a>\n  \n  </li>\n</ul>"
 
 /***/ }),
 
